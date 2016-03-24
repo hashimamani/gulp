@@ -1,3 +1,12 @@
+/*
+ * Cytonn Technologies
+ *
+ * @author: Hashim Amani <hamani@cytonn.com>
+ *
+ * Project: Javascript.
+ *
+ */
+
 var gulp = require ('gulp'),
     sass = require ('gulp-ruby-sass'),
     uglify= require ('gulp-uglify') ; 
@@ -25,7 +34,7 @@ gulp.task('styles', function() {
    //watchtask
 gulp.task('watch', function(){
 	gulp.watch('javascript_events/*.js',['scripts']);
-	gulp.watch('sass/**.scss',['styles']);
+	gulp.watch('sass/**/*.scss',['styles']);
 
 });   
 
